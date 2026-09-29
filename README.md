@@ -1,21 +1,27 @@
 # FAX Imobiliária
 
-Experiência web responsiva para a FAX Imobiliária, com foco em imóveis em Fortaleza, geração de contatos e identidade renovada em preto e vermelho.
+Site institucional responsivo da FAX Imobiliária, com vitrine de imóveis, filtros de busca e captação de contatos em Fortaleza/CE.
 
-## Arquivos
-- `index.html`: conteúdo, metadados e dados estruturados da empresa.
-- `styles.css`: identidade visual, animações leves e layout adaptado para telas pequenas.
-- `script.js`: menu mobile, filtro de imóveis, navegação da vitrine e envio do formulário para o WhatsApp.
+## Aplicação
+O site roda no aplicativo React + TanStack Start já configurado neste repositório. A página principal está em `src/routes/index.tsx`; estilos globais e identidade visual estão em `src/styles.css`.
 
-## Uso
-A página é estática e pode ser publicada na raiz do GitHub Pages ou servida por qualquer host de arquivos estáticos. Não requer build. Fontes e fotografias são carregadas de serviços externos.
+Para desenvolvimento local:
 
-## Funcionalidades
-- Busca local por tipo, finalidade e bairro/cidade entre os imóveis da vitrine.
-- Links para os anúncios públicos da FAX no ZAP Imóveis.
-- Formulário pré-preenchido que encaminha o contato para WhatsApp.
-- Links para chamada telefônica, mapa, site oficial e busca da empresa no Instagram/Facebook.
-- Aviso de que preços e disponibilidade podem mudar.
+```sh
+npm install
+npm run dev
+```
 
-## Referências públicas
-Dados institucionais consultados em [faximobiliaria.com.br](https://faximobiliaria.com.br/): atuação desde 1992, CRECI/CE 651-J, telefone e endereço atual (Rua José Vilar, 1202, Aldeota, Fortaleza). As ofertas e características da vitrine foram consultadas no [perfil da FAX no ZAP Imóveis](https://www.zapimoveis.com.br/imobiliaria/79112/). Links sociais abrem buscas públicas porque não foi possível confirmar um perfil social oficial da marca. Fotografias ilustrativas são servidas pelo Unsplash, não representam necessariamente os imóveis anunciados.
+O build de produção usa `npm run build`.
+
+## Recursos
+- Layout responsivo com identidade em preto e vermelho.
+- Filtro de imóveis por compra/aluguel, tipo e bairro/cidade na vitrine.
+- Links dos imóveis para os anúncios públicos no ZAP Imóveis.
+- Formulário que encaminha os dados preenchidos para o WhatsApp da FAX.
+- Atalhos de telefone, mapa, site oficial e busca social.
+
+## Fontes
+As informações institucionais foram consultadas no [site oficial da FAX](https://faximobiliaria.com.br/): atuação desde 1992, CRECI/CE 651-J, telefone e endereço da Rua José Vilar, 1202, Aldeota, Fortaleza. As oportunidades destacadas vieram do [perfil da FAX no ZAP Imóveis](https://www.zapimoveis.com.br/imobiliaria/79112/). Valores e disponibilidade podem mudar. As fotografias são ilustrativas e carregadas do Unsplash; não representam necessariamente os imóveis anunciados.
+
+Não foi possível confirmar uma conta oficial da FAX no Instagram. Por isso, o link social abre uma busca pública pelo nome da empresa.
