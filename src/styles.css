@@ -142,3 +142,118 @@
     color: var(--color-foreground);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--fax-black:#0b0b0b;--fax-ink:#171717;--fax-red:#e52b22;--fax-red-dark:#c81e19;--fax-paper:#f6f4f1;--fax-gray:#77716b;--fax-line:#e5e1dc;--fax-display:'Manrope',sans-serif;--fax-body:'DM Sans',sans-serif}
+body{font-family:var(--fax-body);-webkit-font-smoothing:antialiased}
+.fax-app{color:var(--fax-ink);background:#fff;min-height:100vh;font-family:var(--fax-body)}
+.fax-app *{box-sizing:border-box}
+.fax-wrap{width:min(1240px,calc(100% - 64px));margin:0 auto}
+.fax-topbar{height:32px;background:#050505;color:#c9c7c3;font-size:9px;letter-spacing:.13em}
+.fax-topbar-inner,.fax-header-inner,.fax-footer-main,.fax-footer-bottom{display:flex;align-items:center;justify-content:space-between;height:100%}
+.fax-topbar a{color:#fff}.fax-topbar strong{color:#ff655c;margin-left:6px}
+.fax-live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--fax-red);margin-right:7px}
+.fax-header{height:79px;position:sticky;top:0;background:white;z-index:50;border-bottom:1px solid #eee}
+.fax-logo{display:inline-flex;align-items:center;gap:10px;color:#080808;text-decoration:none}
+.fax-logo-symbol{font:800 37px/.8 var(--fax-display);letter-spacing:-.14em}.fax-logo-symbol i{color:var(--fax-red);font-style:normal}
+.fax-logo-word{font:800 14px/1 var(--fax-display);letter-spacing:.08em}.fax-logo-word small{display:block;font:700 8px/1.5 var(--fax-body);letter-spacing:.25em}
+.fax-nav{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:700}.fax-nav>a:not(.fax-nav-cta){text-decoration:none}.fax-nav>a:not(.fax-nav-cta):hover{color:var(--fax-red)}
+.fax-nav-cta{background:var(--fax-red);color:white;padding:13px 17px;text-decoration:none}.fax-nav-cta svg{margin-left:13px;vertical-align:middle}
+.fax-menu{display:none}
+.fax-hero{height:min(710px,72vw);min-height:570px;position:relative;background:#080808;color:white;overflow:hidden}
+.fax-hero-image,.fax-hero-overlay{position:absolute;inset:0}.fax-hero-image{background:url('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=2200&q=90') center 52%/cover;animation:fax-reveal 1s ease-out both}
+.fax-hero-overlay{background:linear-gradient(90deg,rgba(5,5,5,.92) 0%,rgba(8,8,8,.77) 34%,rgba(6,6,6,.16) 82%),linear-gradient(0deg,rgba(0,0,0,.45),transparent 28%)}
+.fax-hero-inner{height:100%;position:relative;display:flex;align-items:center}
+.fax-hero-copy{width:min(570px,53%);padding-top:5px;animation:fax-rise .8s .1s both}
+.fax-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:9px;font-weight:800;letter-spacing:.2em;color:#706c67}
+.fax-eyebrow-light{color:#e8e4df}.fax-eyebrow-mark{width:22px;height:2px;background:var(--fax-red);display:inline-block}
+.fax-hero h1{font:700 clamp(55px,7vw,88px)/.99 var(--fax-display);letter-spacing:-.075em;margin:27px 0 20px;color:white}
+.fax-hero h1 em,.fax-section-head h2 em,.fax-experience h2 em,.fax-contact h2 em{font-style:normal;color:var(--fax-red)}
+.fax-hero-copy>p{max-width:400px;color:#dbd9d5;font-size:15px;line-height:1.8;margin:0 0 28px}
+.fax-actions{display:flex;align-items:center;gap:26px}
+.fax-btn{height:50px;padding:0 20px;display:inline-flex;align-items:center;justify-content:space-between;gap:29px;border:0;cursor:pointer;font:700 11px var(--fax-body);text-decoration:none;transition:background .2s,transform .2s,color .2s}
+.fax-btn:hover{transform:translateY(-2px)}.fax-btn-red{background:var(--fax-red);color:white}.fax-btn-red:hover{background:var(--fax-red-dark)}
+.fax-btn-black{background:var(--fax-black);color:white}.fax-btn-black:hover{background:var(--fax-red)}
+.fax-btn-light{border:1px solid #ffffff63;color:white;background:transparent}.fax-btn-light:hover{background:white;color:var(--fax-black)}
+.fax-btn-white{background:white;color:var(--fax-black)}.fax-btn-white:hover{background:var(--fax-black);color:white}
+.fax-hero-link{font-size:10px;font-weight:700;color:#eee;text-decoration:none}.fax-hero-link svg{color:var(--fax-red);margin-left:7px;vertical-align:middle}
+.fax-stamp{position:absolute;right:2px;bottom:84px;display:grid;grid-template-columns:auto auto;align-items:center;column-gap:11px;color:white}
+.fax-stamp-number{font:800 46px/.9 var(--fax-display);letter-spacing:-.09em;color:var(--fax-red)}
+.fax-stamp-copy{font:700 9px/1.3 var(--fax-body);letter-spacing:.12em}.fax-stamp-rule{grid-column:1/-1;height:1px;background:#ffffff75;margin:9px 0 7px}
+.fax-stamp-location{grid-column:1/-1;font-size:8px;font-weight:700;letter-spacing:.18em;color:#dedbd5}
+.fax-hero-caption{position:absolute;bottom:22px;left:0;display:flex;align-items:center;gap:12px;font-size:8px;font-weight:700;letter-spacing:.17em;color:#e4e2de}
+.fax-hero-caption strong{color:#ff5a52}.fax-hero-caption i{width:50px;height:1px;background:var(--fax-red);margin-left:4px}
+.fax-search-wrap{position:relative;z-index:4;background:var(--fax-red);padding:0 32px}
+.fax-search-panel{width:min(1240px,100%);margin:auto;background:white;min-height:104px;display:grid;grid-template-columns:1.1fr .8fr 1fr 1.1fr auto;align-items:center;box-shadow:0 14px 40px #00000019}
+.fax-search-heading{display:flex;align-items:center;gap:13px;padding:0 24px}
+.fax-search-icon{font:34px/1 var(--fax-display);color:var(--fax-red)}.fax-search-heading small,.fax-search-control>span{display:block;color:#938f89;font-size:8px;font-weight:800;letter-spacing:.14em}
+.fax-search-heading strong{font:700 15px var(--fax-display)}
+.fax-search-control{height:49px;border-left:1px solid #e5e2de;padding:2px 20px;display:flex;flex-direction:column;justify-content:center;gap:4px}
+.fax-search-control select,.fax-search-control input{height:23px;border:0;outline:0;background:transparent;width:100%;font-size:12px;font-weight:600;color:var(--fax-ink)}
+.fax-search-control input::placeholder{color:#99948e}.fax-search-button{align-self:stretch;height:auto;margin:10px}
+.fax-section{padding:106px 0}.fax-listings{background:#f8f7f5}
+.fax-section-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:34px}
+.fax-section-head h2,.fax-contact h2{font:700 clamp(39px,5.2vw,61px)/1.08 var(--fax-display);letter-spacing:-.065em;margin:16px 0 0}
+.fax-head-aside{max-width:320px;padding-bottom:5px}.fax-head-aside p{font-size:12px;line-height:1.7;color:#77716b;margin:0 0 15px}
+.fax-under-link{font-size:11px;font-weight:800;border-bottom:1px solid var(--fax-red);padding-bottom:6px;text-decoration:none}.fax-under-link svg{color:var(--fax-red);vertical-align:middle;margin-left:8px}
+.fax-listing-tools{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd9d3;padding:0 0 12px;margin-bottom:19px}
+.fax-result-label{font-size:8px;font-weight:800;letter-spacing:.17em;color:#726e68;display:flex;align-items:center;gap:8px}.fax-result-label i{width:6px;height:6px;border-radius:50%;background:var(--fax-red)}
+.fax-listing-arrows{display:flex;gap:5px}.fax-arrow-btn{width:32px;height:32px;background:white;border:1px solid #dedbd6;color:#141414;cursor:pointer;display:grid;place-items:center}.fax-arrow-btn:hover{background:var(--fax-red);border-color:var(--fax-red);color:white}
+.fax-property-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.fax-property-card{min-width:0;background:white;box-shadow:0 3px 12px #160a0508;transition:transform .3s,box-shadow .3s}.fax-property-card:hover{transform:translateY(-5px);box-shadow:0 17px 35px #160a0517}
+.fax-property-photo{height:260px;display:block;position:relative;overflow:hidden;background:#ddd}.fax-property-photo img{height:100%;object-fit:cover;transition:transform .55s}.fax-property-card:hover .fax-property-photo img{transform:scale(1.045)}
+.fax-property-status{position:absolute;top:15px;left:15px;background:var(--fax-red);color:white;padding:7px 10px;font-size:8px;font-weight:800;letter-spacing:.14em}
+.fax-photo-cta{position:absolute;right:14px;bottom:14px;background:white;color:#111;padding:10px 12px;font-size:8px;font-weight:800;letter-spacing:.1em}.fax-photo-cta svg{color:var(--fax-red);margin-left:12px;vertical-align:middle}
+.fax-property-info{padding:19px 19px 15px}.fax-property-meta{display:flex;justify-content:space-between;color:#827d77;font-size:8px;font-weight:800;letter-spacing:.13em}
+.fax-property-meta span:last-child{color:var(--fax-red)}.fax-property-info h3{font:700 17px var(--fax-display);letter-spacing:-.03em;margin:8px 0 13px}
+.fax-property-facts{display:flex;align-items:center;gap:10px;color:#77716b;font-size:10px;padding:0 0 14px;border-bottom:1px solid #ebe8e4}.fax-property-facts svg{width:13px;height:13px;color:#88827c}
+.fax-property-price-row{display:flex;justify-content:space-between;align-items:center;padding-top:13px}.fax-property-price-row strong{font:800 18px var(--fax-display);letter-spacing:-.04em}
+.fax-property-price-row a{font-size:9px;font-weight:800;color:var(--fax-red);text-decoration:none}.fax-property-price-row a svg{margin-left:5px;vertical-align:middle}
+.fax-listing-note{font-size:9px;color:#77716b;margin:15px 0 0}
+.fax-empty{text-align:center;padding:55px 25px;background:white}.fax-empty>svg{color:var(--fax-red)}.fax-empty h3{font:700 24px var(--fax-display);margin:9px}.fax-empty p{color:#77716b;font-size:12px;margin:0 auto 19px;max-width:360px}
+.fax-experience{display:grid;grid-template-columns:1.05fr .95fr;background:var(--fax-black);color:white;min-height:580px}
+.fax-experience-image{min-height:580px;position:relative}.fax-experience-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0008,transparent 38%)}
+.fax-experience-image img{height:100%;position:absolute;inset:0;object-fit:cover}
+.fax-image-index{position:absolute;left:34px;bottom:29px;z-index:1;color:white;font-size:8px;font-weight:800;letter-spacing:.17em}
+.fax-experience-copy{align-self:center;padding:76px clamp(40px,7vw,105px);max-width:690px}
+.fax-experience h2{font:700 clamp(44px,5vw,66px)/1.05 var(--fax-display);letter-spacing:-.07em;margin:20px 0;color:#fff}
+.fax-experience-copy>p{font-size:12px;line-height:1.9;color:#c8c7c4;max-width:430px}.fax-experience-copy .fax-btn{margin-top:17px}
+.fax-experience-years{border-top:1px solid #ffffff35;margin-top:36px;padding-top:18px;display:flex;align-items:center;gap:14px}
+.fax-experience-years strong{font:800 37px var(--fax-display);color:var(--fax-red);letter-spacing:-.08em}.fax-experience-years span{font-size:9px;line-height:1.45;color:#c8c7c4}
+.fax-service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fax-service-card{border:1px solid #e3e0dc;min-height:250px;padding:22px 23px;position:relative;transition:background .25s,border .25s,color .25s,transform .25s;text-decoration:none;color:var(--fax-ink)}
+.fax-service-card:hover{background:var(--fax-black);color:white;border-color:var(--fax-black);transform:translateY(-4px)}
+.fax-service-count{position:absolute;right:22px;top:20px;color:#aaa;font-size:9px;font-weight:800}.fax-service-symbol{font:32px var(--fax-display);color:var(--fax-red);margin:2px 0 15px}
+.fax-service-card h3{font:700 17px var(--fax-display);margin:0 0 8px}.fax-service-card p{font-size:11px;line-height:1.65;color:#77716b;max-width:270px;margin:0 0 19px}
+.fax-service-card:hover p{color:#c8c7c4}.fax-service-action{font-size:9px;font-weight:800}.fax-service-action svg{color:var(--fax-red);margin-left:8px;vertical-align:middle}
+.fax-red-cta{position:relative;overflow:hidden;background:var(--fax-red);color:white;padding:56px 0}
+.fax-red-cta-inner{display:flex;align-items:center;justify-content:space-between;position:relative}
+.fax-red-cta h2{position:relative;z-index:1;font:700 clamp(28px,4vw,46px)/1.08 var(--fax-display);letter-spacing:-.06em;margin:13px 0 0;color:white}
+.fax-red-cta .fax-eyebrow-mark{background:white}.fax-cta-watermark{position:absolute;right:23%;top:-68px;font:800 210px/.9 var(--fax-display);letter-spacing:-.12em;color:#ffffff0c;pointer-events:none}
+.fax-contact{background:#f5f3f0}.fax-contact-layout{display:grid;grid-template-columns:.9fr 1fr;gap:100px;align-items:center}
+.fax-contact h2{margin:17px 0}.fax-contact-copy>p{max-width:340px;color:#77716b;font-size:12px;line-height:1.8}
+.fax-contact-quick{display:flex;align-items:center;gap:13px;max-width:420px;padding:15px 0;border-bottom:1px solid #ddd9d3;text-decoration:none}
+.fax-quick-icon{width:38px;height:38px;background:white;color:var(--fax-red);display:grid;place-items:center}
+.fax-contact-quick small{display:block;color:#817c76;font-size:8px;font-weight:800;letter-spacing:.14em}.fax-contact-quick b{font-size:11px}.fax-quick-arrow{margin-left:auto;color:var(--fax-red)}
+.fax-instagram-link{display:inline-flex;align-items:center;gap:9px;margin-top:19px;font-size:10px;font-weight:800;text-decoration:none}.fax-instagram-link>svg{color:var(--fax-red)}.fax-instagram-link span{color:var(--fax-red)}
+.fax-lead-form{background:var(--fax-black);padding:33px 36px;color:white;box-shadow:14px 14px 0 var(--fax-red)}
+.fax-form-top h3{font:700 24px var(--fax-display);letter-spacing:-.04em;margin:11px 0 4px;color:#fff}.fax-form-top p{font-size:11px;color:#aaa7a2;margin:0 0 20px}
+.fax-lead-form label{display:block;margin:13px 0 6px;font-size:9px;font-weight:800;letter-spacing:.06em}
+.fax-lead-form input,.fax-lead-form select{width:100%;height:43px;background:#171717;border:1px solid #343434;color:white;padding:0 12px;font:11px var(--fax-body);outline:0}
+.fax-lead-form input:focus,.fax-lead-form select:focus{border-color:var(--fax-red)}.fax-lead-form input::placeholder{color:#777}
+.fax-form-submit{width:100%;margin-top:19px}.fax-form-note{display:block;color:#aaa7a2;font-size:8px;margin-top:10px}
+.fax-footer{background:#050505;color:white;padding:40px 0 17px}.fax-footer-main{padding-bottom:31px}
+.fax-logo-inverse{color:white}.fax-footer-main>p{font-size:10px;color:#a7a39e;line-height:1.6}
+.fax-footer-social{display:flex;align-items:center;gap:13px}.fax-footer-social>span{font-size:8px;letter-spacing:.14em;color:#999}
+.fax-footer-social a{display:grid;place-items:center;width:30px;height:30px;border:1px solid #3d3d3d;border-radius:50%;color:white;text-decoration:none}
+.fax-footer-social a:hover{background:var(--fax-red);border-color:var(--fax-red)}.fax-footer-phone{font:700 16px var(--fax-display);text-decoration:none}.fax-footer-phone svg{color:var(--fax-red)}
+.fax-footer-bottom{border-top:1px solid #333;padding-top:13px;color:#8f8b86;font-size:8px;letter-spacing:.04em}
+.fax-footer-bottom a{color:white;text-decoration:none}
+.fax-whatsapp{position:fixed;z-index:45;right:23px;bottom:22px;width:54px;height:54px;border-radius:50%;background:#20bd67;color:white;display:grid;place-items:center;box-shadow:0 6px 24px #0004;transition:transform .2s}
+.fax-whatsapp:hover{transform:scale(1.08)}
+@keyframes fax-rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fax-reveal{from{transform:scale(1.06);filter:brightness(.7)}to{transform:scale(1.02);filter:brightness(1)}}
+@media(prefers-reduced-motion:reduce){.fax-app *{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media(max-width:950px){.fax-wrap{width:calc(100% - 44px)}.fax-nav{gap:18px}.fax-nav-cta{padding:12px}.fax-hero-copy{width:60%}.fax-search-wrap{padding-inline:22px}.fax-search-panel{grid-template-columns:1fr 1fr 1fr}.fax-search-heading{padding:15px 18px}.fax-search-control{margin:10px 0}.fax-search-place{border-left:0;grid-column:1/3}.fax-search-button{min-height:48px}.fax-contact-layout{gap:50px}.fax-experience-copy{padding:60px 44px}}
+@media(max-width:680px){.fax-wrap{width:calc(100% - 36px)}.fax-topbar{height:29px;font-size:8px}.fax-topbar-inner>span:nth-child(2){display:none}.fax-header{height:67px}.fax-logo-symbol{font-size:32px}.fax-menu{display:flex;width:40px;height:40px;border:0;background:white;flex-direction:column;justify-content:center;gap:6px}.fax-menu span{height:2px;width:23px;background:#111}.fax-nav{display:none;position:absolute;top:67px;left:0;right:0;background:white;flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;box-shadow:0 12px 22px #0002}.fax-nav-open{display:flex}.fax-nav>a:not(.fax-nav-cta){padding:13px 3px;border-bottom:1px solid #eee}.fax-nav-cta{margin-top:13px;text-align:center}.fax-hero{height:650px;min-height:0}.fax-hero-image{background-position:60% center}.fax-hero-overlay{background:linear-gradient(90deg,#050505df,#050505a6 68%,#05050542),linear-gradient(0deg,#0008,transparent 35%)}.fax-hero-copy{width:100%;padding-bottom:52px}.fax-hero h1{font-size:clamp(56px,14vw,76px);margin:24px 0 18px}.fax-hero-copy>p{font-size:13px;max-width:340px}.fax-stamp{right:0;bottom:65px;transform:scale(.82);transform-origin:right bottom}.fax-hero-caption{font-size:7px;bottom:16px}.fax-hero-caption i{width:20px}.fax-search-wrap{padding:0 12px}.fax-search-panel{grid-template-columns:1fr 1fr;padding:10px}.fax-search-heading{grid-column:1/-1;padding:11px}.fax-search-icon{font-size:28px}.fax-search-control{padding:2px 10px}.fax-search-place{grid-column:auto;border-left:1px solid #e5e2de}.fax-search-control>span{font-size:7px}.fax-search-control select,.fax-search-control input{font-size:11px}.fax-search-button{grid-column:1/-1;margin:4px;height:46px}.fax-section{padding:72px 0}.fax-section-head{display:block;margin-bottom:26px}.fax-section-head h2,.fax-contact h2{font-size:44px}.fax-head-aside{margin-top:12px;max-width:340px}.fax-listing-tools{margin-bottom:14px}.fax-property-grid{grid-template-columns:1fr;gap:17px}.fax-property-card:not(:first-child){display:none}.fax-property-grid.fax-filtered .fax-property-card{display:block}.fax-property-photo{height:260px}.fax-property-info{padding:17px}.fax-property-info h3{font-size:18px}.fax-property-facts{gap:12px}.fax-experience{grid-template-columns:1fr}.fax-experience-image{min-height:330px}.fax-experience-copy{padding:54px 24px 58px}.fax-experience h2{font-size:49px}.fax-service-grid{grid-template-columns:1fr;gap:10px}.fax-service-card{min-height:220px;padding:20px}.fax-red-cta{padding:40px 0}.fax-red-cta-inner{align-items:flex-start;flex-direction:column;gap:24px}.fax-red-cta h2{font-size:35px}.fax-cta-watermark{right:4%;top:0;font-size:125px}.fax-contact-layout{grid-template-columns:1fr;gap:35px}.fax-lead-form{padding:25px 20px;box-shadow:8px 8px 0 var(--fax-red)}.fax-footer-main{display:grid;grid-template-columns:1fr 1fr;gap:22px}.fax-footer-main>p{grid-column:1/-1;grid-row:2}.fax-footer-social{justify-self:end}.fax-footer-phone{grid-column:1/-1}.fax-footer-bottom{flex-wrap:wrap}.fax-whatsapp{right:14px;bottom:14px;width:49px;height:49px}}
+@media(max-width:380px){.fax-topbar a{font-size:8px}.fax-property-facts{gap:8px;font-size:9px}.fax-actions{gap:15px}.fax-actions .fax-btn{padding:0 13px;gap:13px}.fax-hero-link{font-size:9px}}
