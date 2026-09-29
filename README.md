@@ -1,24 +1,18 @@
-# Hello Project
+# Fax Imobiliária — página de vendas
 
-oi
+Site institucional responsivo para apresentar imóveis e captar contatos para a Fax Imobiliária, em Fortaleza/CE.
 
-This project was built with [Lovable](https://lovable.dev).
+## Como usar
+Abra `index.html` em um navegador ou publique o conteúdo deste repositório como site estático. A página não precisa de instalação ou etapa de build.
 
-## Build with Lovable
+## Funcionalidades
+- Layout responsivo para celular e desktop.
+- Links para imóveis anunciados pela Fax no portal ZAP Imóveis.
+- Busca por categoria na seleção apresentada.
+- Formulário que prepara uma mensagem para o WhatsApp comercial.
+- Atalhos para telefone, localização, site oficial e páginas de serviço.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3dbef7cd-54bc-4f9b-ac5c-3511bc688f0f).
+## Dados e referências
+As informações institucionais foram consultadas no site oficial da [Fax Imobiliária](https://faximobiliaria.com.br/), incluindo a atuação desde 1992, serviços, endereço e telefone. O CRECI/CE 651-J consta no site oficial. As ofertas destacadas são referências de anúncios publicados pela Fax no [ZAP Imóveis](https://www.zapimoveis.com.br/imobiliaria/79112/). Preços, fotos e disponibilidade podem mudar; confirme os dados com a imobiliária antes de tomar uma decisão. Os links levam ao portal para consultar os anúncios atualizados.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+O formulário abre o WhatsApp no número público de atendimento (85) 3224-4445. As imagens de ambiente são carregadas remotamente do Unsplash.
